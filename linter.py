@@ -18,7 +18,7 @@ class Semistandard(NodeLinter):
     """Provides an interface to semistandard."""
 
     syntax = ('javascript', 'html', 'javascriptnext', 'javascript 6to5')
-    cmd = 'semistandard'
+    cmd = ('semistandard', '-')
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 2.5.0'
